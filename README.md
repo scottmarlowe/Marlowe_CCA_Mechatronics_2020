@@ -94,7 +94,7 @@ WEEK 6
 
 Installed a potentiometer to control an LED.
 
-```CCP
+```CPP
 // the setup routine runs once when you press reset:
 void setup() {
   // initialize serial communication at 9600 bits per second:
@@ -119,7 +119,7 @@ void loop() {
 
 Installed an ultrasonic sensor to control the brightness of and LED
 
-```CCP
+```CPP
 // defines pins numbers
 const int trigPin = 9;
 const int echoPin = 10;
