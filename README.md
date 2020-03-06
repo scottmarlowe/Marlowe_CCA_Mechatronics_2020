@@ -13,7 +13,7 @@ WEEK 2
 
 WEEK 3
 
-![fail 1](Marlowe_CCA_Mechatronics_2020/Week3/fail 1.jpg)
+![fail 1](/Week3/fail 1.jpg)
 https://youtu.be/JkjAVWVGftY
 
 ![fail 2](/Week3/fail 2.jpg)
