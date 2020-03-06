@@ -19,13 +19,16 @@ WEEK 3
 
 Motor cannot drive the device due to poor mechanical construction causing wobble and friction.
 
-![fail 1](/Week3/fail 1.jpg)
+Failure attempting to drive the belt with separate motor-driven pulley.
+
 https://youtu.be/JkjAVWVGftY
 
-![fail 2](/Week3/fail 2.jpg)
+Faiure attempting to directly drive one of the instaled pulleys with motor.
+
 https://youtu.be/KKH3dOzUtBs
 
-![hand driven](/Week3/hand driven.jpg)
+Still works when cranked by hand.
+
 https://youtu.be/ou-ai9QHBVQ
 
 WEEK 4
