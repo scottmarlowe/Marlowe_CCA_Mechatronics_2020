@@ -9,7 +9,7 @@ https://youtu.be/jwTeE3iCjKA
 ![Crank Device](/Week1/CrankDevice3.jpg)
 
 WEEK 2
-![Crank Device Triple](/Week2/CrankDeviceTripled.gif)
+![Crank Device Triple](/Week2/CrankDeviceTriple.gif)
 
 WEEK 3
 ![fail 1](/Week3/fail 1.jpg)
