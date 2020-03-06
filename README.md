@@ -39,6 +39,10 @@ WEEK 6
 ![potentiometer](/Week5/potentiometer.jpg)
 
 WEEK 7
+
+Satisfying spin
+https://youtu.be/7d1ex_uC-Dk
+
 Three birds motor driven
 https://youtu.be/D1ydWNQE_gU
 
