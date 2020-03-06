@@ -94,6 +94,8 @@ WEEK 6
 
 Installed a potentiometer to control an LED.
 
+!(Week6/potentiometer.jpg)
+
 ```CPP
 // the setup routine runs once when you press reset:
 void setup() {
