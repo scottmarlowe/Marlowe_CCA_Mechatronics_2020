@@ -39,22 +39,31 @@ Two alternately blinking lights
 ![blinking](/Week4/blinking.jpg)
 
 A close encounters of the third kind light sequence using delay coding.
+
 ![close encounters](/Week4/close encounters.jpg)
+
 https://youtu.be/8M5ZBc7ynqw
 
 Light sensor sending information to the computer.
+
 ![light sensors](/Week4/light sensors.jpg)
+
 https://youtu.be/K-38DAcPvN4
 
 WEEK 5
 
 Considering planetary gears and if they can be used for this project.
+
 ![planetary gears](/Week5/planetary gears.jpg)
+
 https://youtu.be/du1b_oT3mYc
 
 WEEK 6
 
-Installed a potentiometer to control an LED
+Installed a potentiometer to control an LED.
+
+Installed an ultrasonic sensor to control the brightness of and LED
+
 ![potentiometer](/Week5/potentiometer.jpg)
 
 WEEK 7
@@ -62,8 +71,10 @@ WEEK 7
 Improved mechanics of the tripple pulley device by installing bearings on pulley axles to dramatically reduce friction.
 
 Satisfying spin
+
 https://youtu.be/7d1ex_uC-Dk
 
 Three birds motor driven
+
 https://youtu.be/D1ydWNQE_gU
 
