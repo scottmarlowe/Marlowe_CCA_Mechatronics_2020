@@ -171,13 +171,13 @@ Improved mechanics of the tripple pulley device by installing bearings on pulley
 
 ![bore](/Week7/bore.jpg)
 
-Satisfying spin
-
-Video
+Satisfying spin Video
 https://youtu.be/7d1ex_uC-Dk
 
 Three birds motor driven
 
 ![workingmotor](/Week7/workingmotor.jpg)
+
+Video
 https://youtu.be/D1ydWNQE_gU
 
