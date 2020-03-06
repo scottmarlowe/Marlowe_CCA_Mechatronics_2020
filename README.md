@@ -77,7 +77,7 @@ https://youtu.be/8M5ZBc7ynqw
 
 Light sensor sending information to the computer.
 
-![light sensors](/Week4/light sensors.jpg)
+![lightsensors](/Week4/lightsensors.jpg)
 
 https://youtu.be/K-38DAcPvN4
 
