@@ -11,10 +11,12 @@ https://youtu.be/jwTeE3iCjKA
 ![Crank Device](/Week1/CrankDevice3.jpg)
 
 WEEK 2
+
 Single crank driving three pulleys with levers and cams. Belts tend to slip and pulleys are being pulled off axis. 
 ![Crank Device Triple](/Week2/CrankDeviceTriple.gif)
 
 WEEK 3
+
 Motor cannot drive the device due to poor mechanical construction and friction.
 ![fail 1](/Week3/fail 1.jpg)
 https://youtu.be/JkjAVWVGftY
@@ -26,6 +28,7 @@ https://youtu.be/KKH3dOzUtBs
 https://youtu.be/ou-ai9QHBVQ
 
 WEEK 4
+
 Playing with LED bulbs
 
 Two alternately blinking lights
@@ -40,15 +43,18 @@ Light sensor sending information to the computer.
 https://youtu.be/K-38DAcPvN4
 
 WEEK 5
+
 Considering planetary gears and if they can be used for this project.
 ![planetary gears](/Week5/planetary gears.jpg)
 https://youtu.be/du1b_oT3mYc
 
 WEEK 6
+
 Installed a potentiometer to control an LED
 ![potentiometer](/Week5/potentiometer.jpg)
 
 WEEK 7
+
 Improved mechanics of the tripple pulley device by installing bearings on pulley axles to dramatically reduce friction.
 
 Satisfying spin
