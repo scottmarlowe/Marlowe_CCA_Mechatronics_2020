@@ -89,6 +89,7 @@ Light sensor sending information to the computer.
 
 ![lightsensors](/Week4/lightsensors.jpg)
 
+Video
 https://youtu.be/K-38DAcPvN4
 
 
