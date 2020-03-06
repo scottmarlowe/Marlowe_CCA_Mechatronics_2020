@@ -32,8 +32,12 @@ https://youtu.be/K-38DAcPvN4
 
 WEEK 5
 ![planetary gears](/Week5/planetary gears.jpg)
-https://youtu.be/H3qsfc9mCs0
+https://youtu.be/du1b_oT3mYc
 
 WEEK 6
 ![potentiometer](/Week5/potentiometer.jpg)
+
+WEEK 7
+Three birds motor driven
+https://youtu.be/D1ydWNQE_gU
 
