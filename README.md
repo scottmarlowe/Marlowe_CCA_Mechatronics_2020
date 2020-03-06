@@ -160,7 +160,6 @@ analogWrite(6, brightness);
 
 ```
 
-![potentiometer](/Week5/potentiometer.jpg)
 
 WEEK 7
 
