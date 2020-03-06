@@ -12,6 +12,7 @@ WEEK 2
 ![Crank Device Triple](/Week2/CrankDeviceTriple.gif)
 
 WEEK 3
+
 ![fail 1](/Week3/fail 1.jpg)
 https://youtu.be/JkjAVWVGftY
 
@@ -28,4 +29,11 @@ https://youtu.be/8M5ZBc7ynqw
 
 ![light sensors](/Week4/light sensors.jpg)
 https://youtu.be/K-38DAcPvN4
+
+WEEK 5
+![planetary gears](/Week5/planetary gears.jpg)
+https://youtu.be/H3qsfc9mCs0
+
+WEEK 6
+![potentiometer](/Week5/potentiometer.jpg)
 
