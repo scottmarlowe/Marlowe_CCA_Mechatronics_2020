@@ -17,7 +17,8 @@ Single crank driving three pulleys with levers and cams. Belts tend to slip and 
 
 WEEK 3
 
-Motor cannot drive the device due to poor mechanical construction and friction.
+Motor cannot drive the device due to poor mechanical construction causing wobble and friction.
+
 ![fail 1](/Week3/fail 1.jpg)
 https://youtu.be/JkjAVWVGftY
 
