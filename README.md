@@ -57,6 +57,7 @@ Playing with LED bulbs
 Two alternately blinking lights, I did not get a video of this.
 ![blinking](/Week4/blinking.jpg)
 
+```CPP
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(8, OUTPUT);
@@ -76,7 +77,7 @@ void loop() {
 Serial.println("Come on now!");
 //wait 100 milliseconds so we don't drive ourselves crazy
 delay(1000);
-
+```
 
 A close encounters of the third kind light sequence using delay coding.
 
@@ -220,4 +221,48 @@ Circuitry connecting motor to arduino and supplimentary power source
 
 ![circuitry](/Week8/circuitry.jpg)
 ![curcuitry](/Week8/curcuitry2.jpg)
+
+```CPP
+
+// defines pins numbers
+const int trigPin = 9;
+const int echoPin = 10;
+// defines variables
+long duration;
+int distance;
+int brightness;
+
+void setup() {
+pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
+pinMode(echoPin, INPUT); // Sets the echoPin as an Input
+Serial.begin(9600); // Starts the serial communication
+pinMode(6, OUTPUT);
+}
+void loop() {
+// Clears the trigPin
+digitalWrite(trigPin, LOW);
+delayMicroseconds(2);
+// Sets the trigPin on HIGH state for 10 micro seconds
+digitalWrite(trigPin, HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPin, LOW);
+// Reads the echoPin, returns the sound wave travel time in microseconds
+duration = pulseIn(echoPin, HIGH);
+// Calculating the distance
+distance= duration*0.034/2;
+// Prints the distance on the Serial Monitor
+Serial.print("Distance: ");
+Serial.println(distance);
+
+//brightness = distance;
+distance = constrain(distance, 0, 120);
+ brightness = map(distance, 0, 60, 255, 0);
+analogWrite(6, brightness);
+
+
+
+}
+```
+
+
 
