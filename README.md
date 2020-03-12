@@ -200,3 +200,24 @@ Three birds motor driven
 Video
 https://youtu.be/D1ydWNQE_gU
 
+WEEK 8
+
+Three birds rotating at different speeds reletive to eachother with overall speed controlled by single motor connected to an arduino conrolled ultrasonic sensor.
+
+Motor speed controlled by proximity to ultrasonic sensor:
+
+Video
+https://youtu.be/zGDzemhVlsw
+
+Images of setup:
+
+New belt heights required a new approach to mounting the motor. Motor with attached pulley installed inversed (motor above pulley) by supporting pulley underneath with additional bearing and building new mount for motor.
+
+![motorcasing](/Week8/motorcasing.jpg)
+![motorcasing2](/Week8/motorcasing2.jpg)
+
+Circuitry connecting motor to arduino and supplimentary power source
+
+![circuitry](/Week8/circuitry.jpg)
+![curcuitry](/Week8/curcuitry2.jpg)
+
