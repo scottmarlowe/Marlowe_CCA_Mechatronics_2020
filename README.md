@@ -266,6 +266,7 @@ analogWrite(6, brightness);
 Video:
 Final video tour of project and demonstration. Single motor wth pulley driving three additional pullies conected by two belts. Pulley circumferences determine rotational speed in relation to each other (1.5:3:6). Overall speed controlled by proximity to ultrasonic sensor. As one approaches the birds, they begin to fly in circles. the closer you get, the faster they fly.
 
+![Finalvideo](/Week9/Finalvideo.jpg)
 https://youtu.be/GVb2Gd1MELI
 
 
