@@ -33,7 +33,7 @@ Failure attempting to drive the belt with separate motor-driven pulley.
 Video
 https://youtu.be/JkjAVWVGftY
 
-Faiure attempting to directly drive one of the instaled pulleys with motor.
+Failure attempting to directly drive one of the instaled pulleys with motor.
 
 ![fail2](/Week3/fail2.jpg)
 
@@ -263,6 +263,7 @@ analogWrite(6, brightness);
 
 }
 ```
+![Ultrasonicbirdsfritzing](/Week9/Ultrasonicbirdsfritzing.jpg)
 Video:
 Final video tour of project and demonstration. Single motor wth pulley driving three additional pullies conected by two belts. Pulley circumferences determine rotational speed in relation to each other (1.5:3:6). Overall speed controlled by proximity to ultrasonic sensor. As one approaches the birds, they begin to fly in circles. the closer you get, the faster they fly.
 
