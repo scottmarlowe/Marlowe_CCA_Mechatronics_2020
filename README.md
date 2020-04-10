@@ -271,4 +271,9 @@ Final video tour of project and demonstration. Single motor wth pulley driving t
 https://youtu.be/GVb2Gd1MELI
 
 
+FINAL PROJECT
+
+Sound Frequency Tutorial:
+https://create.arduino.cc/projecthub/calettso/audio-frequency-detector-617856
+
 
