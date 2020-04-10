@@ -276,4 +276,8 @@ FINAL PROJECT
 Sound Frequency Tutorial:
 https://create.arduino.cc/projecthub/calettso/audio-frequency-detector-617856
 
+Circuit:
+![frequencycircuit](/Finalproject/frequencycircuit.jpg)
 
+Code:
+![frequencydetectcode](/Finalproject/frequencydetectcode.jpg)
