@@ -334,15 +334,15 @@ void loop()
 }
 ```
 
-While the code and the sensor technically worked, I quickly realised that the sensitivity of this particular sensor was going to make it nearly impossible to accurately control the input (it seemed to be detecting sounds and giving back frequencies other than what I was offering). Also, the harmonic nuances of the human voice were going to make it incredibly difficult to identify a particular frequency. At this point I threw in the towel and decided to use what I had been learning about ultrasonic sensors for my final project. We were going to continue making birds fly.
+While the code and the sensor technically worked, I quickly realized that the sensitivity of this particular sensor was going to make it nearly impossible to accurately control the input (it seemed to be detecting sounds and giving back frequencies other than what I was offering). Also, the harmonic nuances of the human voice were going to make it incredibly difficult to identify a particular frequency. At this point I threw in the towel and decided to use what I had been learning about ultrasonic sensors for my final project. We were going to continue making birds fly.
 
-I shifted my vision to creating an apparatus of multiple birds that would be suspend in the air. Using ultrasonic sensors, any birds in the "flock" that a person passed underneath would begin circling above thier head, and would find stillness again as the person left thier vicinity. In an ideal situation with all the time and resources possible, this would be a sprawling installation creating wave patterns of circling birds above people's heads as they passed through the space.
+I shifted my vision to creating an apparatus of multiple birds that would be suspend in the air. Using ultrasonic sensors, any birds in the "flock" that a person passed underneath would begin circling above their head, and would find stillness again as the person left their vicinity. In an ideal situation with all the time and resources possible, this would be a sprawling installation creating wave patterns of circling birds above people's heads as they passed through the space.
 
 I began by building a simple wooden grid in my garage studio, and suspended a simple motor driven mobile. Using the same proximity/speed code from the previous project I began playing around:
 
 https://youtu.be/Q75GnXtyGvE
 
-I then moved away from proximity and found code that could decelerate the motor after the sensor stopped detecting an object. With Sudhu's help, I tweaked to this:
+I then moved away from speed being controlled through proximity and found code that would trigger the motor at full and then decelerate the motor after the sensor stopped detecting an object. With Sudhu's help, I tweaked to this:
 
 ```CPP
 const int trigPin = 6;
@@ -405,7 +405,7 @@ The next challenge was to get multiple sensors communicating through one Arduino
 
 ![sixsensors](/Finalproject/sixsensors.jpg)
 
-Two of the sensors were not responding, a third would only register a distance of zero, so I ripped out those three sensors and moved forward (this was a blessing in disguise, later I realized my studio space would have been too small to accomodate six of these apparatus.
+Two of the sensors were not responding, a third would only register a distance of zero, so I ripped out those three sensors and moved forward (this was a blessing in disguise, later I realized my studio space would have been too small to accommodate six of these apparatus.
 
 Code for three sensors. Original code by Robomechtrix:
 ```CPP
@@ -508,7 +508,7 @@ void setup() {
    delay(10);
   }
   ```
-Now, I needed to figure out how to use these three sensors to conrol three separate motors.
+Now, I needed to figure out how to use these three sensors to control three separate motors.
 
 ![3sensors3motors](/Finalproject/3sensors3motors.jpg)
 
@@ -638,14 +638,14 @@ delay(50);
 // ====================================
 ```
 
-Then it was time to install. Before unhooking the motors and sensors from the board I meticulously labeled all the conections so as to avoid any frustrating guesswork or confusion later.
+Then it was time to install. Before unhooking the motors and sensors from the board I meticulously labeled all the connections so as to avoid any frustrating guesswork or confusion later.
 
 I mounted the three sensors to hang from the grid on the periphery of the space to avoid any mobiles from self triggering (in a larger space with many more apparatus a different solution would need to be designed).
 
 ![sensorspremount](/Finalproject/sensorspremount.jpg)
 ![sensorsmounted](/Finalproject/sensorsmounted.jpg)
 
-The arduino, breadbord, and power supplies are mounted at the ceter of the grid.
+The arduino, breadbord, and power supplies are mounted at the center of the grid.
 
 ![boardmount](/Finalproject/boardmount.jpg)
 
