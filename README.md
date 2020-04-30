@@ -397,3 +397,6 @@ analogWrite (motor, motorSpeed);
   delay(50);
 ```
 
+During my early explorations of a mobile apparatus using wooden disks suspended on strings, I realized that the inertia of the motor starting up caused the strings to immediately tangle. So, I moved them all to one side of the motor wheel to create a circling flock effect. Then, an obvious problem. With the ultrasonic sensor positioned to project downward near the mobile, once the motor started running, the sensor would detect the passing objects and constantly rev back up to full power, never decelerating. I had created an eternal cycle.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q75GnXtyGvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
