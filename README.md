@@ -511,3 +511,137 @@ void setup() {
 Now, I needed to figure out how to use these three sensors to conrol three separate motors.
 
 ![3sensors3motors](/Finalproject/3sensors3motors.jpg)
+
+Again, with Sudhu's assistance, I integrated our "deceleration code" into the code for three ultrasonic sensors. When the motors were not properly decelerating, he pointed out that I was using a digital input pin rather than an analogue pin. Thank you! Finally the thing was working, kind of. Two of the motors were still not responding as intended. They would not engage until AFTER they stopped detecting an object. I investigated, did some research, and discovered several brackets and semi-colons that needed to be moved or deleted. Success.
+
+https://youtu.be/OC8mFgH-Kdw
+
+
+```CPP
+const int trigPin1 = 7;
+const int echoPin1 = 8;
+const int motor1 = 5;
+int motor1Speed = 0;
+
+
+const int trigPin2 = 12;
+const int echoPin2 = 13;
+const int motor2 = 3;
+int motor2Speed = 0;
+
+const int trigPin3 = 2;
+const int echoPin3 = 4;
+const int motor3 = 9;
+int motor3Speed = 0;
+
+
+
+void setup() {
+  Serial.begin (9600);
+  pinMode(trigPin1, OUTPUT);
+  pinMode(echoPin1, INPUT);
+  pinMode(trigPin2, OUTPUT);
+  pinMode(echoPin2, INPUT);
+  pinMode(trigPin3, OUTPUT);
+  pinMode(echoPin3, INPUT);
+
+}
+
+void loop() {
+  // Sensor 1 ==================================================================
+  long duration1, distance1;
+  digitalWrite(trigPin1, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin1, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin1, LOW);
+  duration1 = pulseIn(echoPin1, HIGH);
+  distance1 = (duration1 / 2) / 29.1;
+
+  if (distance1 <= 60) {  // Distance from sensor
+    motor1Speed = 255; // motor ON
+    Serial.print("\t Motor1 ON");
+  }  else {
+    motor1Speed = motor1Speed - 5; // motor DECELERATE
+    Serial.print("\t Decelerate");
+  }
+
+  motor1Speed = constrain(motor1Speed, 0, 255);
+  analogWrite(motor1, motor1Speed);
+  Serial.print("\t motor1Speed");
+  Serial.println(motor1Speed);
+
+// =========================================================
+// Sensor 1 END =====================================================
+// =========================================================
+
+
+delay(50);
+
+// Sensor 2 =================================================================
+
+long duration2, distance2;
+digitalWrite(trigPin2, LOW);
+delayMicroseconds(2);
+digitalWrite(trigPin2, HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPin2, LOW);
+duration2 = pulseIn(echoPin2, HIGH);
+distance2 = (duration2 / 2) / 29.1;
+
+if (distance2 <= 60) {  // Distance from sensor
+  motor2Speed = 255; // motor ON
+  Serial.print("\t Motor2 ON");
+}  else {
+  motor2Speed = motor2Speed - 5; // motor DECELERATE
+  Serial.print("\t Decelerate");
+}
+  motor2Speed = constrain(motor2Speed, 0, 255);
+  analogWrite(motor2, motor2Speed);
+  Serial.print("\t motor2Speed");
+  Serial.println(motor2Speed);
+
+// ====================================
+// Sensor 2 END ======================================
+// ====================================
+
+delay(50);
+
+// Sensor 3 ======================================================================
+long duration3, distance3;
+digitalWrite(trigPin3, LOW);
+delayMicroseconds(2);
+digitalWrite(trigPin3, HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPin3, LOW);
+duration3 = pulseIn(echoPin3, HIGH);
+distance3 = (duration3 / 2) / 29.1;
+
+if (distance3 <= 60) {  // Distance from sensor
+  motor3Speed = 255; // motor ON
+  Serial.print("\t Motor3 ON");
+}  else {
+  motor3Speed = motor3Speed - 5; // motor DECELERATE
+  Serial.print("\t Decelerate");
+
+}
+  motor3Speed = constrain(motor3Speed, 0, 255);
+  analogWrite(motor3, motor3Speed);
+  Serial.print("\t motor3Speed");
+  Serial.println(motor3Speed);
+
+
+delay(50);
+}
+// ====================================
+// Sensor 3 END ======================================
+// ====================================
+```
+
+Then it was time to install. Before unhooking the motors and sensors from the board I meticulously labeled all the conections so as to avoid any frustrating guesswork or confusion later.
+
+I mounted the three sensors to hang from the grid on the periphery of the space to avoid any mobiles from self triggering (in a larger space with many more apparatus a different solution would need to be designed).
+
+![sensorspremount](/Finalproject/sensorspremount.jpg)
+![sensorsmounted](/Finalproject/sensorsmounted.jpg)
+
