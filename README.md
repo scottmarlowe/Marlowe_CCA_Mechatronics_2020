@@ -661,7 +661,7 @@ The stage is set.
 And the system works. As long as you remain in proximity to any particular mobile apparatus, the bird(s) will fly at full speed. The moment you move away, the birds glide to a stop.
 
 Bird installation in action:
+
 https://youtu.be/otABHn40RxY
 
 
-https://youtu.be/otABHn40RxY
