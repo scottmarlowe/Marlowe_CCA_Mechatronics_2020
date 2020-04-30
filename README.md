@@ -651,3 +651,17 @@ The arduino, breadbord, and power supplies are mounted at the ceter of the grid.
 
 20 gauge "bell wire" is used to connect all the sensors and motors to the board.
 
+![bellwire](/Finalproject/bellwire.jpg)
+![gridwires](/Finalproject/gridwires.jpg)
+
+The stage is set.
+
+![stageset](/Finalproject/stageset.jpg)
+
+And the system works. As long as you remain in proximity to any particular mobile apparatus, the bird(s) will fly at full speed. The moment you move away, the birds glide to a stop.
+
+Bird installation in action:
+https://youtu.be/otABHn40RxY
+
+
+https://youtu.be/otABHn40RxY
