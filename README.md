@@ -645,3 +645,9 @@ I mounted the three sensors to hang from the grid on the periphery of the space 
 ![sensorspremount](/Finalproject/sensorspremount.jpg)
 ![sensorsmounted](/Finalproject/sensorsmounted.jpg)
 
+The arduino, breadbord, and power supplies are mounted at the ceter of the grid.
+
+![boardmount](/Finalproject/boardmount.jpg)
+
+20 gauge "bell wire" is used to connect all the sensors and motors to the board.
+
