@@ -397,6 +397,117 @@ analogWrite (motor, motorSpeed);
   delay(50);
 ```
 
-During my early explorations of a mobile apparatus using wooden disks suspended on strings, I realized that the inertia of the motor starting up caused the strings to immediately tangle. So, I moved them all to one side of the motor wheel to create a circling flock effect. Then, an obvious problem. With the ultrasonic sensor positioned to project downward near the mobile, once the motor started running, the sensor would detect the passing objects and constantly rev back up to full power, never decelerating. I had created an eternal cycle.
+During my early explorations of a mobile apparatus using wooden disks suspended on strings, I realized that the inertia of the motor starting up caused the strings to immediately tangle. So, I moved them all to one side of the motor wheel to create a circling flock effect. Then, an obvious problem. With the ultrasonic sensor positioned to project downward near the mobile, once the motor started running, the sensor would detect the passing objects and constantly rev back up to full power, never decelerating. I had created a never ending cycle.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Q75GnXtyGvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://youtu.be/plBLBUfeJcc
+
+The next challenge was to get multiple sensors communicating through one Arduino. Again, I went in search of existing code as a foundation for what I wanted to achieve. I found code for five sensors and expanded it to include a sixth.
+
+![sixsensors](/Finalproject/sixsensors.jpg)
+
+Two of the sensors were not responding, a third would only register a distance of zero, so I ripped out those three sensors and moved forward (this was a blessing in disguise, later I realized my studio space would have been too small to accomodate six of these apparatus.
+
+Code for three sensors. Original code by Robomechtrix:
+```CPP
+//int trigPin1=2;
+//int echoPin1=3;
+
+//int trigPin2=4;
+//int echoPin2=5;
+
+int trigPin3=6;
+int echoPin3=7;
+int motor3=2;
+
+//int trigPin4=8;
+//int echoPin4=9;
+
+int trigPin5=10;
+int echoPin5=11;
+int motor5=3;
+
+int trigPin6=12;
+int echoPin6=13;
+int motor6=4;
+
+void setup() {
+  Serial.begin (9600);
+  //pinMode(trigPin1, OUTPUT);
+  //pinMode(echoPin1, INPUT);
+  //pinMode(trigPin2, OUTPUT);
+  //pinMode(echoPin2, INPUT);
+  pinMode(trigPin3, OUTPUT);
+  pinMode(echoPin3, INPUT);
+  //pinMode(trigPin4, OUTPUT);
+  //pinMode(echoPin4, INPUT);
+  pinMode(trigPin5, OUTPUT);
+  pinMode(echoPin5, INPUT);
+  pinMode(trigPin6, OUTPUT);
+  pinMode(echoPin6, INPUT);
+
+}
+
+  void loop() {
+  long duration3, distance3;
+  digitalWrite(trigPin3, LOW); 
+  delayMicroseconds(2); 
+  digitalWrite(trigPin3, HIGH);
+  delayMicroseconds(10); 
+  digitalWrite(trigPin3, LOW);
+  duration3 = pulseIn(echoPin3, HIGH);
+  distance3= (duration3/2) / 29.1;
+
+   if (distance3 >= 100 || distance3 <= 0){
+    Serial.println("Out of range");
+  }
+  else {
+    Serial.print("Sensor3  ");
+    Serial.print(distance3);
+    Serial.println("cm");
+  }
+ 
+
+   delay(10);
+     long duration5, distance5;
+  digitalWrite(trigPin5, LOW); 
+  delayMicroseconds(2); 
+  digitalWrite(trigPin5, HIGH);
+  delayMicroseconds(10); 
+  digitalWrite(trigPin5, LOW);
+  duration5 = pulseIn(echoPin5, HIGH);
+  distance5 = (duration5/2) / 29.1;
+
+   if (distance5 >= 100 || distance5 <= 0){
+    Serial.println("Out of range");
+  }
+  else {
+    Serial.print ( "Sensor5  ");
+    Serial.print ( distance5);
+    Serial.println("cm");
+  }
+
+   delay(10);
+     long duration6, distance6;
+  digitalWrite(trigPin6, LOW); 
+  delayMicroseconds(2); 
+  digitalWrite(trigPin6, HIGH);
+  delayMicroseconds(10); 
+  digitalWrite(trigPin6, LOW);
+  duration6 = pulseIn(echoPin6, HIGH);
+  distance6 = (duration6/2) / 29.1;
+
+   if (distance6 >= 100 || distance6 <= 0){
+    Serial.println("Out of range");
+  }
+  else {
+    Serial.print ( "Sensor6  ");
+    Serial.print ( distance6);
+    Serial.println("cm");
+  }
+
+   delay(10);
+  }
+  ```
+Now, I needed to figure out how to use these three sensors to conrol three separate motors.
+
+![3sensors3motors](/Finalproject/3sensors3motors.jpg)
